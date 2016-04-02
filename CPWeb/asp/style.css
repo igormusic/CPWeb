@@ -1,0 +1,92 @@
+BODY
+{
+    FONT-FAMILY: Tahoma;
+    BACKGROUND-COLOR: white
+}
+.StandardTable
+{
+    BORDER-RIGHT: lightblue thin;
+    BORDER-TOP: lightblue thin;
+    FONT-SIZE: smaller;
+    BORDER-LEFT: lightblue thin;
+    BORDER-BOTTOM: lightblue thin;
+    BORDER-COLLAPSE: collapse;
+    BACKGROUND-COLOR: transparent
+}
+.StandardTable A
+{
+    COLOR: #4169e1
+}
+.StandardTable A:hover
+{
+    COLOR: #00bfff
+}
+.Header
+{
+    FONT-WEIGHT: bolder;
+    COLOR: white;
+    BACKGROUND-COLOR: steelblue
+}
+.StandardTable #ColHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: smaller;
+    COLOR: black;
+    BACKGROUND-COLOR: skyblue;
+    FONT-VARIANT: small-caps
+}
+.StandardTable #OddRow
+{
+    BACKGROUND-COLOR: transparent
+}
+.StandardTable #EvenRow
+{
+    BACKGROUND-COLOR: #ebf7fc
+}
+.PageHeader
+{
+    BORDER-RIGHT: highlight thick solid;
+    BORDER-TOP: highlight thick solid;
+    FONT-WEIGHT: bolder;
+    BORDER-LEFT: highlight thick solid;
+    COLOR: white;
+    BORDER-BOTTOM: highlight thick solid;
+    BACKGROUND-COLOR: highlight;
+    FONT-VARIANT: small-caps
+}
+.PageHeader A
+{
+    COLOR: #4169e1;	
+    TEXT-DECORATION: none    
+}
+.PageHeader A:hover
+{
+    COLOR: #00bfff;
+	TEXT-DECORATION: none
+}
+
+.StandardTable #Bold
+{
+    FONT-WEIGHT: bolder;
+    WIDTH: 30%
+}
+.TVMFooter
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: xx-small;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    BACKGROUND-COLOR: lightyellow;
+    FONT-VARIANT: small-caps
+}
+.TVMFooter A
+{
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+.TVMFooter A:hover
+{
+    COLOR: blue;
+    TEXT-DECORATION: none
+}

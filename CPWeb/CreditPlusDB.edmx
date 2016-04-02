@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CreditPlusModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="Rabo_WWW_CustomerDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CustomerId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_DealDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DealId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_DealStructureDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DealStructureId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetAnswers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetContacts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetCurrentRate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetCustomerDeals" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CustomerId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetCustomers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchString" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetCustomersDeals" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CustomerId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetDeals" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchString" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetDealStructures" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchString" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetDealStructuresDeals" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DealStructureId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetDrawDownItems" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Client" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetInstalments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetLEvelData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientID" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetPositions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DealId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetRateHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientId" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Rabo_WWW_GetTasks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="CreditPlusModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CreditPlusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CreditPlusEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="Rabo_WWW_CustomerDetail" ReturnType="Collection(CreditPlusModel.Customer)">
+            <Parameter Name="CustomerId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_DealDetails">
+            <Parameter Name="DealId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_DealStructureDetails" ReturnType="Collection(CreditPlusModel.Rabo_WWW_DealStructureDetails_Result)">
+            <Parameter Name="DealStructureId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetAddress" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetAddress_Result)">
+            <Parameter Name="ClientId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetAnswers" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetAnswers_Result)">
+            <Parameter Name="ClientId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetContacts" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetContacts_Result)">
+            <Parameter Name="ClientId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetCurrentRate">
+            <Parameter Name="ClientId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetCustomerDeals" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetCustomerDeals_Result)">
+            <Parameter Name="CustomerId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetCustomers" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetCustomers_Result)">
+            <Parameter Name="SearchString" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetCustomersDeals">
+            <Parameter Name="CustomerId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetDates" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetDates_Result)">
+            <Parameter Name="ClientId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetDeals" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetDeals_Result)">
+            <Parameter Name="SearchString" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetDealStructures" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetDealStructures_Result)">
+            <Parameter Name="SearchString" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetDealStructuresDeals" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetDealStructuresDeals_Result)">
+            <Parameter Name="DealStructureId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetDrawDownItems" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetDrawDownItems_Result)">
+            <Parameter Name="Client" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetInstalments" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetInstalments_Result)">
+            <Parameter Name="ClientId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetLEvelData" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetLEvelData_Result)">
+            <Parameter Name="ClientID" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetPositions" ReturnType="Collection(CreditPlusModel.Rabo_WWW_GetPositions_Result)">
+            <Parameter Name="DealId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetRateHistory">
+            <Parameter Name="ClientId" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Rabo_WWW_GetTasks" />
+        </EntityContainer>
+        <ComplexType Name="Customer">
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Binary" Name="Timestamp" Nullable="false" MaxLength="8" />
+          <Property Type="String" Name="ObjectDescription" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="CustomerNumber" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="CustomerSearchName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CustomerName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Salutation" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="IDNumber" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="TradingName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ContactPosition" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Title" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Initials" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Surname" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="FirstNames" Nullable="false" MaxLength="50" />
+          <Property Type="Boolean" Name="Corporate" Nullable="false" />
+          <Property Type="Int32" Name="NextDealNumber" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="HoldingPeriod" Nullable="false" />
+          <Property Type="Boolean" Name="IsAuthorised" Nullable="false" />
+          <Property Type="Int32" Name="ContainerType" Nullable="false" />
+          <Property Type="Decimal" Name="Profile" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="CustomerContainer" Nullable="false" Precision="16" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_DealStructureDetails_Result">
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Int32" Name="StructureNumber" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="DealStructureType" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetAddress_Result">
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="AddressLine2" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="AddressLine3" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="AddressLine4" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PostCode_SA" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetAnswers_Result">
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="Question" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="Answer" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetContacts_Result">
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Value" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetCustomerDeals_Result">
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Binary" Name="Timestamp" Nullable="false" MaxLength="8" />
+          <Property Type="String" Name="ObjectDescription" Nullable="false" MaxLength="255" />
+          <Property Type="Int32" Name="DealNumber" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="1000" />
+          <Property Type="DateTime" Name="LastDayEndDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="DisableManualTransactions" Nullable="false" />
+          <Property Type="Boolean" Name="Activated" Nullable="false" />
+          <Property Type="Int32" Name="DefaultAdjustmentType" Nullable="false" />
+          <Property Type="Decimal" Name="Product" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="DealState" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="ProductVariation" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="Customer" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="AccountingPortfolio" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="CurrencyType" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="CurrencyTreatment" Nullable="false" Precision="16" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetCustomers_Result">
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Binary" Name="Timestamp" Nullable="false" MaxLength="8" />
+          <Property Type="String" Name="ObjectDescription" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="CustomerNumber" Nullable="false" MaxLength="6" />
+          <Property Type="String" Name="CustomerSearchName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CustomerName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Salutation" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="IDNumber" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="TradingName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ContactPosition" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Title" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Initials" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Surname" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="FirstNames" Nullable="false" MaxLength="50" />
+          <Property Type="Boolean" Name="Corporate" Nullable="false" />
+          <Property Type="Int32" Name="NextDealNumber" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="HoldingPeriod" Nullable="false" />
+          <Property Type="Boolean" Name="IsAuthorised" Nullable="false" />
+          <Property Type="Int32" Name="ContainerType" Nullable="false" />
+          <Property Type="Decimal" Name="Profile" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="CustomerContainer" Nullable="false" Precision="16" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetDates_Result">
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="EffectiveDate" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetDeals_Result">
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Decimal" Name="CustomerId" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="CustomerName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CustomerNumber" Nullable="false" MaxLength="6" />
+          <Property Type="Int32" Name="DealNumber" Nullable="false" />
+          <Property Type="String" Name="Product" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Variation" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ExternalRef" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="DealStructureId" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="DealStructure" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="StructureNumber" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetDealStructures_Result">
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Binary" Name="Timestamp" Nullable="false" MaxLength="8" />
+          <Property Type="String" Name="ObjectDescription" Nullable="false" MaxLength="255" />
+          <Property Type="Int32" Name="StructureNumber" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="DealStructureType" Nullable="false" Precision="16" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetDealStructuresDeals_Result">
+          <Property Type="Decimal" Name="CustomerId" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="CustomerName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CustomerNumber" Nullable="false" MaxLength="6" />
+          <Property Type="Decimal" Name="DealId" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="Int32" Name="DealNumber" Nullable="false" />
+          <Property Type="String" Name="Product" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Variation" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetDrawDownItems_Result">
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetInstalments_Result">
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Binary" Name="Timestamp" Nullable="false" MaxLength="8" />
+          <Property Type="String" Name="ObjectDescription" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="EffectiveDate" Nullable="false" Precision="23" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+          <Property Type="Boolean" Name="IsFixed" Nullable="false" />
+          <Property Type="Decimal" Name="PreviousAmount" Nullable="false" Precision="19" />
+          <Property Type="Decimal" Name="AmortisedInterest" Nullable="false" Precision="19" />
+          <Property Type="Decimal" Name="OpeningBalance" Nullable="false" Precision="19" />
+          <Property Type="Decimal" Name="ClosingBalance" Nullable="false" Precision="19" />
+          <Property Type="Decimal" Name="InstalmentRule" Nullable="false" Precision="16" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetLEvelData_Result">
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Value" Nullable="true" MaxLength="255" />
+        </ComplexType>
+        <ComplexType Name="Rabo_WWW_GetPositions_Result">
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="Id" Nullable="false" Precision="16" Scale="0" />
+          <Property Type="String" Name="PositionTypeDescription" Nullable="false" MaxLength="50" />
+          <Property Type="Decimal" Name="PositionValue" Nullable="false" Precision="19" />
+          <Property Type="String" Name="PositionValue_CCY" Nullable="false" MaxLength="3" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CreditPlusModelStoreContainer" CdmEntityContainer="CreditPlusEntities" >
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_CustomerDetail" FunctionName="CreditPlusModel.Store.Rabo_WWW_CustomerDetail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Customer">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ObjectDescription" ColumnName="ObjectDescription" />
+                <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+                <ScalarProperty Name="CustomerSearchName" ColumnName="CustomerSearchName" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+                <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+                <ScalarProperty Name="TradingName" ColumnName="TradingName" />
+                <ScalarProperty Name="ContactPosition" ColumnName="ContactPosition" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Initials" ColumnName="Initials" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="FirstNames" ColumnName="FirstNames" />
+                <ScalarProperty Name="Corporate" ColumnName="Corporate" />
+                <ScalarProperty Name="NextDealNumber" ColumnName="NextDealNumber" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="HoldingPeriod" ColumnName="HoldingPeriod" />
+                <ScalarProperty Name="IsAuthorised" ColumnName="IsAuthorised" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="Profile" ColumnName="Profile" />
+                <ScalarProperty Name="CustomerContainer" ColumnName="CustomerContainer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_DealDetails" FunctionName="CreditPlusModel.Store.Rabo_WWW_DealDetails" />
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_DealStructureDetails" FunctionName="CreditPlusModel.Store.Rabo_WWW_DealStructureDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_DealStructureDetails_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StructureNumber" ColumnName="StructureNumber" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="DealStructureType" ColumnName="DealStructureType" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetAddress" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetAddress">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetAddress_Result">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+                <ScalarProperty Name="AddressLine4" ColumnName="AddressLine4" />
+                <ScalarProperty Name="PostCode_SA" ColumnName="PostCode_SA" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetAnswers" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetAnswers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetAnswers_Result">
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetContacts" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetContacts">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetContacts_Result">
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetCurrentRate" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetCurrentRate" />
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetCustomerDeals" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetCustomerDeals">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetCustomerDeals_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ObjectDescription" ColumnName="ObjectDescription" />
+                <ScalarProperty Name="DealNumber" ColumnName="DealNumber" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LastDayEndDate" ColumnName="LastDayEndDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="DisableManualTransactions" ColumnName="DisableManualTransactions" />
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+                <ScalarProperty Name="DefaultAdjustmentType" ColumnName="DefaultAdjustmentType" />
+                <ScalarProperty Name="Product" ColumnName="Product" />
+                <ScalarProperty Name="DealState" ColumnName="DealState" />
+                <ScalarProperty Name="ProductVariation" ColumnName="ProductVariation" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="AccountingPortfolio" ColumnName="AccountingPortfolio" />
+                <ScalarProperty Name="CurrencyType" ColumnName="CurrencyType" />
+                <ScalarProperty Name="CurrencyTreatment" ColumnName="CurrencyTreatment" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetCustomers" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetCustomers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetCustomers_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ObjectDescription" ColumnName="ObjectDescription" />
+                <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+                <ScalarProperty Name="CustomerSearchName" ColumnName="CustomerSearchName" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+                <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+                <ScalarProperty Name="TradingName" ColumnName="TradingName" />
+                <ScalarProperty Name="ContactPosition" ColumnName="ContactPosition" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Initials" ColumnName="Initials" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="FirstNames" ColumnName="FirstNames" />
+                <ScalarProperty Name="Corporate" ColumnName="Corporate" />
+                <ScalarProperty Name="NextDealNumber" ColumnName="NextDealNumber" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="HoldingPeriod" ColumnName="HoldingPeriod" />
+                <ScalarProperty Name="IsAuthorised" ColumnName="IsAuthorised" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="Profile" ColumnName="Profile" />
+                <ScalarProperty Name="CustomerContainer" ColumnName="CustomerContainer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetCustomersDeals" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetCustomersDeals" />
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetDates" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetDates">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetDates_Result">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetDeals" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetDeals">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetDeals_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+                <ScalarProperty Name="DealNumber" ColumnName="DealNumber" />
+                <ScalarProperty Name="Product" ColumnName="Product" />
+                <ScalarProperty Name="Variation" ColumnName="Variation" />
+                <ScalarProperty Name="ExternalRef" ColumnName="ExternalRef" />
+                <ScalarProperty Name="DealStructureId" ColumnName="DealStructureId" />
+                <ScalarProperty Name="DealStructure" ColumnName="DealStructure" />
+                <ScalarProperty Name="StructureNumber" ColumnName="StructureNumber" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetDealStructures" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetDealStructures">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetDealStructures_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ObjectDescription" ColumnName="ObjectDescription" />
+                <ScalarProperty Name="StructureNumber" ColumnName="StructureNumber" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="DealStructureType" ColumnName="DealStructureType" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetDealStructuresDeals" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetDealStructuresDeals">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetDealStructuresDeals_Result">
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+                <ScalarProperty Name="DealId" ColumnName="DealId" />
+                <ScalarProperty Name="DealNumber" ColumnName="DealNumber" />
+                <ScalarProperty Name="Product" ColumnName="Product" />
+                <ScalarProperty Name="Variation" ColumnName="Variation" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetDrawDownItems" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetDrawDownItems">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetDrawDownItems_Result">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetInstalments" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetInstalments">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetInstalments_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="ObjectDescription" ColumnName="ObjectDescription" />
+                <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="IsFixed" ColumnName="IsFixed" />
+                <ScalarProperty Name="PreviousAmount" ColumnName="PreviousAmount" />
+                <ScalarProperty Name="AmortisedInterest" ColumnName="AmortisedInterest" />
+                <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+                <ScalarProperty Name="ClosingBalance" ColumnName="ClosingBalance" />
+                <ScalarProperty Name="InstalmentRule" ColumnName="InstalmentRule" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetLEvelData" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetLEvelData">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetLEvelData_Result">
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetPositions" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetPositions">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CreditPlusModel.Rabo_WWW_GetPositions_Result">
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PositionTypeDescription" ColumnName="PositionTypeDescription" />
+                <ScalarProperty Name="PositionValue" ColumnName="PositionValue" />
+                <ScalarProperty Name="PositionValue_CCY" ColumnName="PositionValue_CCY" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetRateHistory" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetRateHistory" />
+          <FunctionImportMapping FunctionImportName="Rabo_WWW_GetTasks" FunctionName="CreditPlusModel.Store.Rabo_WWW_GetTasks" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
